@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Patterns</title>
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <!-- normal css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- my js -->
+    <script defer src="assets/scripts/script.js"></script>
+  </head>
+    
+  <body>
+    <!-- nav bar -->
+    <header>
+      <nav class="d-flex justify-content-between align-items-center flex-wrap px-4 py-2">
+        <!-- web logo + page links :p (stick left) -->
+        <div class="d-flex align-items-center gap-4 flex-wrap">
+          <a href="index.html"> <!-- icon -->
+            <img src="assets/pictures/icon.png" alt="Pink crochet bow icon representing site logo" width="50" class="me-3">
+          </a>
+
+          <!-- page links -->
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="tools.html" class="text-white text-decoration-none">Tools</a>
+            <a href="stitches.html" class="text-white text-decoration-none">Stitches</a>
+            <a href="patterns.html" class="text-white text-decoration-none">Patterns</a>
+            <a href="contactus.html" class="text-white text-decoration-none">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- font controls! (goes to the right) -->
+        <div class="d-flex align-items-center gap-2 flex-wrap">
+          <button id="increaseFont" class="btn btn-light btn-sm">A+</button>
+          <button id="decreaseFont" class="btn btn-light btn-sm">A-</button>
+
+          <label for="fontSelect" class="text-white mb-0 ms-2 small">Font:</label>
+          <select id="fontSelect" class="form-select form-select-sm w-auto">
+            <option value="sans-serif">Sans</option>
+            <option value="serif">Serif</option>
+            <option value="monospace">Mono</option>
+          </select>
+        </div>
+      </nav>
+    </header>
+
+    <div id="content"> <!-- id for javascript -->
+      <!-- buttons to new pages **coming soon** -->
+      <section class="container text-center my-4">
+        <a href="#"><button class="btn btn-outline-dark m-2">Beginner</button></a>
+        <a href="#"><button class="btn btn-outline-dark m-2">Intermediate</button></a>
+        <a href="#"><button class="btn btn-outline-dark m-2">Advanced</button></a>
+      </section>
+
+      <div class="container my-4">
+        <h1 class="mb-5 text-center">Trending Patterns</h1>
+
+        <section class="row align-items-center my-5"> <!--bunny plush pattern -->
+          <div class="col-md-4 text-center">
+            <a href="https://ribblr.com/pattern/mr-bunny-Crochet?utmcampaign=social&utmmedium=pat&utmsource=pinterest" target="_blank">
+              <img src="assets/pictures/bunny_plush_pattern.jpg" alt="Crocheted bunny plushie with floppy ears in white yarn" class="img-fluid" width="200">
+            </a>
+          </div>
+          <div class="col-md-8">
+            <p>
+              This intermediate-level amigurumi pattern guides you through creating an adorable bunny plushie using standard US terms. It has step‑by‑step instructions—including leg, body, arm, and ear construction—with helpful video tutorials to boost clarity. You’ll need a 5mm hook, safety eyes, and yarn to build this cute, soft toy great for gifting or display!
+            </p>
+            <b>Click the picture to see the pattern!</b>
+          </div>
+        </section>
+
+        <section class="row align-items-center my-5 flex-md-row-reverse"> <!-- chick plush pattern -->
+          <div class="col-md-4 text-center">
+            <a href="https://oakandmarlow.com/maisy-duck-crochet-pattern/" target="_blank">
+              <img src="assets/pictures/chick_plush_pattern.png" alt="Yellow duck plush with orange beak and black beaded eyes, held upright in hand" class="img-fluid" width="200">
+            </a>
+          </div>
+          <div class="col-md-8">
+            <p>
+              This Maisy Duck crochet pattern by Oak & Marlow is an easy‑intermediate, no‑sew amigurumi pattern that transforms the Mabel Chicken base into a pouty‑beaked rubber duck. You’ll need an 8mm hook and super bulky (category 6) yarn to create the plush about 6″ tall. It’s great for quick gifts or brightening up a space.
+            </p>
+            <b>Click the picture to see the pattern!</b>
+          </div>
+        </section>
+
+        <section class="row align-items-center my-5"> <!-- reindeer plush pattern -->
+          <div class="col-md-4 text-center">
+            <a href="https://oakandmarlow.com/jasper-reindeer-mod/" target="_blank">
+              <img src="assets/pictures/reindeer_plush_pattern.png" alt="Crocheted reindeer plush with white antlers and gray body, held in hands" class="img-fluid" width="200">
+            </a>
+          </div>
+          <div class="col-md-8">
+            <p>
+            This free color‑change mod enhances the original Jasper Reindeer pattern by introducing a softly contoured, two‑tone face, giving Jasper extra charm and personality. The modification includes instructions for both worsted and super‑bulky “blanket” yarn sizes, using either a 3.5mm hook (yielding a 10″/25cm tall reindeer) or an 8mm hook (for a larger 21″/53cm version). This easy‑intermediate mod is perfect for making a cozy, heirloom‑quality gift or market piece with a sweet, custom‑colored face.
+            </p>
+            <b>Click the picture to see the pattern!</b>
+          </div>
+        </section>
+      </div>
+    </div> <!-- "content" id -->
+  </body>
+</html>
