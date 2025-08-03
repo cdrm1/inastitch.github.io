@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home: In a Stitch</title>
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <!-- my css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- my js script -->
+    <script defer src="assets/scripts/script.js"></script>
+  </head>
+
+  <body>
+    <!-- nav bar -->
+    <header>
+      <nav class="d-flex justify-content-between align-items-center flex-wrap px-4 py-2">
+        <!-- web logo + page links :p (stick left) -->
+        <div class="d-flex align-items-center gap-4 flex-wrap">
+          <a href="index.html"> <!-- icon -->
+            <img src="assets/pictures/icon.png" alt="Pink crochet bow icon representing site logo" width="50" class="me-3">
+          </a>
+
+          <!-- page links -->
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="tools.html" class="text-white text-decoration-none">Tools</a>
+            <a href="stitches.html" class="text-white text-decoration-none">Stitches</a>
+            <a href="patterns.html" class="text-white text-decoration-none">Patterns</a>
+            <a href="contactus.html" class="text-white text-decoration-none">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- font controls! (goes to the right) -->
+        <div class="d-flex align-items-center gap-2 flex-wrap">
+          <button id="increaseFont" class="btn btn-light btn-sm">A+</button>
+          <button id="decreaseFont" class="btn btn-light btn-sm">A-</button>
+
+          <label for="fontSelect" class="text-white mb-0 ms-2 small">Font:</label>
+          <select id="fontSelect" class="form-select form-select-sm w-auto">
+            <option value="sans-serif">Sans</option>
+            <option value="serif">Serif</option>
+            <option value="monospace">Mono</option>
+          </select>
+        </div>
+      </nav>
+    </header>
+
+    <div id="content"> <!-- id for javascript -->
+      <main class="container my-4">
+        <h1 class="text-center">Welcome to In A Stitch!</h1>
+        <p class="lead">
+          In A Stitch is a simple resource for learning or expanding your crochet skills at any level! Whether you’re brand new to the craft or looking to expand your skills, we've collected guides, patterns, and tips to help you grow as a creative.
+        </p>
+      </main>
+
+      <section class="container my-5">
+        <h2 class="text-center mb-4">Ready to get started?</h2>
+        
+        <div class="tab-sections">
+          <section class="tabs">
+            <a href="tools.html">Tools</a>
+            <p>This page features some basic info on the biggest tool you'll need to crochet -- a crochet hook! We'll tell you about different kinds, their benefits and downsides.</p>
+          </section>
+
+          <section class="tabs">
+            <a href="stitches.html">Stitches</a>
+            <p>On this page we discuss the building blocks of this craft: stitches. It features descritptions, images, and helpful Youtube tutorials for you visual learners.</p>
+          </section>
+
+          <section class="tabs">
+            <a href="patterns.html">Patterns</a>
+            <p>Now that you've learned the basics, in the "Patterns" page, we provide a few patterns for any  level crafters to get you started! There is a brief descript and links, so just click the picture to get started.</p>
+          </section>
+
+          <section class="tabs">
+            <a href="contactus.html">Contact Us</a>
+            <p>We highly value you giving our website a look and appreciate any and all feedback. Have a comment, concern, or suggestion? Let us know!</p>
+          </section>
+        </div> <!-- tab sections -->
+      </section>
+    </div> <!-- "content" id -->
+  </body>
+</html>
