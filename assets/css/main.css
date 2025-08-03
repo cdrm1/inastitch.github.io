@@ -1,0 +1,172 @@
+/* In a Stitch stylesheet! */
+
+/* basics */
+header {
+	height: 5rem; /* ~80px */
+	background-color: #482c3d;
+	border-radius: 0.625rem; /* 10px */
+}
+
+body {
+	font-family: sans-serif;
+	background-color: #e6dcdb;
+	color: #482c3d;
+}
+
+a {
+	text-decoration: underline;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+/* nav bar */
+nav a {
+	color: #a38893;
+	text-align: center;
+	padding: 0.875rem 1rem; /* 14px 16px */
+	text-decoration: underline;
+	display: inline-block;
+}
+
+nav a:hover {
+	color: #e6dcd8;
+	font-weight: bold;
+}
+
+/* main + section */
+main {
+	padding: 1rem;
+}
+
+main p {
+	padding: 1rem;
+}
+
+
+/* home tab descriptions */
+.tab-sections {
+  display: flex;
+  gap: 1rem;
+}
+
+.tabs {
+  background-color: #482c3d;
+  color: #e6dcd8;
+  width: 100%;
+  max-width: 300px;
+  padding: 1rem;
+  border-radius: 8px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.tabs a {
+  color: #e6dcd8;
+  text-decoration: underline;
+}
+
+.tabs a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
+/* tools, stitches, patterns side-by-side descriptions */
+.pic-descriptions {
+	overflow: hidden;
+	margin-bottom: 1.25rem; /* 20px */
+}
+
+.pic-descriptions img {
+	float: left;
+	margin-right: 1.25rem; /* 20px */
+	width: 100%;
+	max-width: 12.5rem; /* 200px */
+	height: auto;
+	border-radius: 0.1875rem; /* 3px */
+	border: 0.0625rem solid #482c3d; /* 1px */
+}
+
+.pic-descriptions p {
+	padding: 0.875rem 0; /* 14px 0 */
+}
+
+/* basic pictures style */
+.basic-pictures {
+	border-radius: 0.1875rem;
+	border: 0.1rem solid #482c3d;
+	padding: 0.4rem;
+}
+
+.social-icons {
+	margin: 0 0.3125rem; /* 5px */
+}
+
+/* patterns page */
+button, .btn {
+	background-color: #e6dcd8;
+	color: #482c3d;
+	padding: 0.625rem 1.25rem; /* 10px 20px */
+	margin: 0.625rem; /* 10px */
+	border: 0.0625rem solid #482c3d;
+	border-radius: 0.625rem;
+	cursor: pointer;
+}
+
+button:hover, .btn:hover {
+	background-color: #482c3d;
+	color: #e6dcd8;
+	border-color: #482c3d;
+}
+
+/* contact us page! */
+form {
+	padding: 1rem;
+	max-width: 37.5rem; /* 600px */
+	margin: 0 auto;
+}
+
+input[type="text"], input[type="email"], textarea {
+	width: 100%;
+	padding: 0.75rem; /* 12px */
+	margin: 0.5rem 0;
+	box-sizing: border-box;
+	border: 0.0625rem solid #a38893;
+	border-radius: 0.3125rem; /* 5px */
+	font-family: Georgia, serif;
+}
+
+input[type="submit"] {
+	background-color: #482c3d;
+	color: #a38893;
+	padding: 0.9375rem 1rem; /* 15px 16px */
+	border-radius: 0.625rem;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+input[type="submit"]:hover {
+	background-color: #e6dcd8;
+	color: #482c3d;
+	border: 0.0625rem solid #482c3d;
+}
+
+/* Removed old float-based layout for form and aside */
+
+/* Responsive tweaks */
+@media (max-width: 48rem) { /* 768px */
+	.tab-descriptions {
+		float: none;
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 1.25rem;
+	}
+	.pic-descriptions img {
+		float: none;
+		display: block;
+		margin: 0 auto 0.9375rem auto; /* 15px */
+	}
+}

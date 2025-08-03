@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+
+    <!-- normal css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- my js -->
+    <script defer src="assets/scripts/script.js"></script>
+  </head>
+  
+  <body>
+    <!-- nav bar -->
+    <header>
+      <nav class="d-flex justify-content-between align-items-center flex-wrap px-4 py-2">
+        <!-- web logo + page links (should all be left in nav bar!) :p -->
+        <div class="d-flex align-items-center gap-4 flex-wrap">
+          <a href="index.html"> <!-- icon -->
+            <img src="assets/pictures/icon.png" alt="Pink crochet bow icon representing site logo" width="50" class="me-3">
+          </a>
+
+          <!-- page links -->
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="tools.html" class="text-white text-decoration-none">Tools</a>
+            <a href="stitches.html" class="text-white text-decoration-none">Stitches</a>
+            <a href="patterns.html" class="text-white text-decoration-none">Patterns</a>
+            <a href="contactus.html" class="text-white text-decoration-none">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- font controls! (goes to the right) -->
+        <div class="d-flex align-items-center gap-2 flex-wrap">
+          <button id="increaseFont" class="btn btn-light btn-sm">A+</button>
+          <button id="decreaseFont" class="btn btn-light btn-sm">A-</button>
+
+          <label for="fontSelect" class="text-white mb-0 ms-2 small">Font:</label>
+          <select id="fontSelect" class="form-select form-select-sm w-auto">
+            <option value="sans-serif">Sans</option>
+            <option value="serif">Serif</option>
+            <option value="monospace">Mono</option>
+          </select>
+        </div>
+      </nav>
+    </header>
+
+    <div id="content">
+      <div class="container my-5">
+        <h1 class="text-center mb-4">Contact Us</h1>
+
+        <!-- actual contact form -->
+        <form action="mailto:name@domain.com" method="post">
+          <div class="mb-3">
+            <input type="text" name="user-name" class="form-control" placeholder="Your name">
+          </div>
+          <div class="mb-3">
+            <input type="email" name="useremail" class="form-control" placeholder="name@domain.com" required>
+          </div>
+          <div class="mb-3">
+            <textarea name="message" rows="5" class="form-control" placeholder="Enter your message here!"></textarea>
+          </div>
+          <div class="text-center">
+            <input type="submit" name="submit" value="Send Message" class="btn btn-dark">
+          </div>
+        </form>
+      </div>
+
+      <!-- socials box -->
+      <aside class="container text-center my-5">
+        <h2 class="mb-3">We'd love to hear from you!</h2>
+        <div class="d-flex justify-content-center gap-4">
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="assets/pictures/insta_icon.png" alt="Instagram logo linking to our page" width="50">
+          </a>
+          <a href="https://x.com/" target="_blank">
+            <img src="assets/pictures/x_icon.png" alt="X (formerly Twitter) logo linking to our page" width="50">
+          </a>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="assets/pictures/facebook_icon.png" alt="Facebook logo linking to our page" width="50">
+          </a>
+        </div>
+    </aside>
+  </div>
+
+  </body>
+</html>

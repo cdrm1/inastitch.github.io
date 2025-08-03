@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tools</title>
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <!-- my css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- my js -->
+    <script defer src="assets/scripts/script.js"></script>
+  </head>
+    
+  <body>
+    <!-- nav bar -->
+    <header>
+      <nav class="d-flex justify-content-between align-items-center flex-wrap px-4 py-2">
+        <!-- web logo + page links :p (stick left)-->
+        <div class="d-flex align-items-center gap-4 flex-wrap">
+          <a href="index.html"> <!-- icon -->
+            <img src="assets/pictures/icon.png" alt="Pink crochet bow icon representing site logo" width="50" class="me-3">
+          </a>
+
+          <!-- page links -->
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="tools.html" class="text-white text-decoration-none">Tools</a>
+            <a href="stitches.html" class="text-white text-decoration-none">Stitches</a>
+            <a href="patterns.html" class="text-white text-decoration-none">Patterns</a>
+            <a href="contactus.html" class="text-white text-decoration-none">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- font controls! (goes to the right) -->
+        <div class="d-flex align-items-center gap-2 flex-wrap">
+          <button id="increaseFont" class="btn btn-light btn-sm">A+</button>
+          <button id="decreaseFont" class="btn btn-light btn-sm">A-</button>
+
+          <label for="fontSelect" class="text-white mb-0 ms-2 small">Font:</label>
+          <select id="fontSelect" class="form-select form-select-sm w-auto">
+            <option value="sans-serif">Sans</option>
+            <option value="serif">Serif</option>
+            <option value="monospace">Mono</option>
+          </select>
+        </div>
+      </nav>
+    </header>
+
+    <div id="content"> <!-- id for javascript -->
+      <main class="container my-4"> <!-- general description of crochet hooks -->
+        <p>
+          A crochet hook is a handheld tool with a curved tip used to pull yarn through loops to create crochet stitches. They come in various sizes and materials like aluminum, plastic, or wood, depending on the yarn and project. The hook size affects the tightness and texture of the finished fabric.
+        </p>
+      </main>
+
+      <section class="container row align-items-center my-5">
+        <div class="col-md-4 text-center">
+          <img src="assets/pictures/inline_hook.jpg" class="img-fluid basic-pictures" alt="Metal inline crochet hook with deep groove just under the hook" width="200">
+        </div>
+        <div class="col-md-8">
+          <h2>Inline Hooks</h2>
+          <p>
+            Inline crochet hooks have a straight shaft with the hook tip aligned evenly with the handle, forming a consistent, uniform shape. This design helps maintain even tension and can make stitches more consistent. Many crocheters find inline hooks easier for beginners or for making precise stitches.
+          </p>
+        </div>
+      </section>
+
+      <section class="container row align-items-center my-5 flex-md-row-reverse">
+        <div class="col-md-4 text-center">
+          <img src="assets/pictures/tapered_hook.jpg" class="img-fluid basic-pictures" alt="Orange tapered crochet hook with curved groove under the hook" width="200">
+        </div>
+        <div class="col-md-8">
+          <h2>Tapered Hooks</h2>
+          <p>
+            Tapered crochet hooks have a rounded, narrower throat that gradually tapers down to the hook tip, which is slightly offset from the handle. This design allows for smoother, quicker movement and is often preferred for a more relaxed crocheting style. Tapered hooks are popular among crocheters who like a fluid, less rigid stitching experience.
+          </p>
+        </div>
+      </section>
+
+      <section class="container row align-items-center my-5">
+        <div class="col-md-4 text-center">
+          <img src="assets/pictures/handled_hook.jpg" class="img-fluid basic-pictures" alt="Metal crochet hook with plastic handle for easier grip" width="200">
+        </div>
+        <div class="col-md-8">
+          <h2>Handled Hooks</h2>
+          <p>
+            Handled crochet hooks feature a thicker or ergonomic grip attached to the shaft, designed to reduce hand strain and improve comfort during long crocheting sessions. They come in various shapes and materials like rubber or silicone. Handled hooks are ideal for those with arthritis or anyone looking for better control and less fatigue.
+          </p>
+        </div>
+      </section>
+    </div> <!-- "content" id -->
+  </body>
+</html>

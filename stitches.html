@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Stitches</title>
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <!-- normal css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- my js -->
+    <script defer src="assets/scripts/script.js"></script>
+  </head>
+
+  <body>
+    <!-- nav bar -->
+    <header>
+      <nav class="d-flex justify-content-between align-items-center flex-wrap px-4 py-2">
+        <!-- web logo + page links :p (stick left)-->
+        <div class="d-flex align-items-center gap-4 flex-wrap">
+          <a href="index.html"> <!-- icon -->
+            <img src="assets/pictures/icon.png" alt="Pink crochet bow icon representing site logo" width="50" class="me-3">
+          </a>
+
+          <!-- page links -->
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="tools.html" class="text-white text-decoration-none">Tools</a>
+            <a href="stitches.html" class="text-white text-decoration-none">Stitches</a>
+            <a href="patterns.html" class="text-white text-decoration-none">Patterns</a>
+            <a href="contactus.html" class="text-white text-decoration-none">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- font controls! (goes to the right) -->
+        <div class="d-flex align-items-center gap-2 flex-wrap">
+          <button id="increaseFont" class="btn btn-light btn-sm">A+</button>
+          <button id="decreaseFont" class="btn btn-light btn-sm">A-</button>
+
+          <label for="fontSelect" class="text-white mb-0 ms-2 small">Font:</label>
+          <select id="fontSelect" class="form-select form-select-sm w-auto">
+            <option value="sans-serif">Sans</option>
+            <option value="serif">Serif</option>
+            <option value="monospace">Mono</option>
+          </select>
+        </div>
+      </nav>
+    </header>
+
+    <div id="content" class="container my-4"> <!-- id for javascript -->
+      <main> <!-- general description of crochet stitches -->
+        <p>
+          Crochet stitches are the building blocks of crochet fabric, created by pulling loops of yarn through other loops using a crochet hook. Basic stitches include the chain, single crochet, half double crochet, and double crochet, each varying in height and texture. Combining different stitches creates patterns, textures, and shapes in crochet projects. This page referres to US standard metrics (as opposed to UK, which varies slightly).
+        </p>
+      </main>
+
+      <section class="row align-items-center my-5"> <!-- slip stitch -->
+        <div class="col-md-4 text-center">
+          <img src="assets/pictures/ss_chain.jpg" alt="Slip stitch forming a chain of blue yarn" class="img-fluid" width="300">
+        </div>
+        <div class="col-md-8">
+          <h2>Slip Stitch</h2>
+          <p>Slip stitch, abbreviated as <b>ss</b> or <b>sl st</b> in some patterns, is the shortest crochet stitch and is often used to join rounds or move across stitches without adding height.</p>
+          <a href="https://www.youtube.com/watch?v=8ir3v31G0sg" target="_blank">Here's a helpful YouTube tutorial.</a>
+        </div>
+      </section>
+
+      <section class="row align-items-center my-5 flex-md-row-reverse">
+        <div class="col-md-4 text-center">
+          <img src="assets/pictures/sc_stitch.jpg" alt="Rectangular swatch of single crochet with gray yarn" class="img-fluid" width="300">
+        </div>
+        <div class="col-md-8">
+          <h2>Single Crochet</h2>
+          <p>Single crochet, or <b>sc</b> in patterns, is a tight, compact stitch that creates a dense fabric, commonly used in items like amigurumi.</p>
+          <a href="https://www.youtube.com/watch?v=7FcRdxg0aeY" target="_blank">Here's a helpful YouTube tutorial.</a>
+        </div>
+      </section>
+
+      <section class="row align-items-center my-5">
+        <div class="col-md-4 text-center">
+          <img src="assets/pictures/hd_stitch.jpg" alt="Rectangular swatch of half double crochet in progress with green yarn" class="img-fluid" width="300">
+        </div>
+        <div class="col-md-8">
+          <h2>Half Double Crochet</h2>
+          <p>Half double crochet, known as <b>hdc</b> in many patterns, is slightly taller than single crochet and offers a good balance of height and flexibility</p>
+          <a href="https://www.youtube.com/watch?v=f9C1C21MNiM" target="_blank">Here's a helpful YouTube tutorial.</a>
+        </div>
+      </section>
+
+      <section class="row align-items-center my-5 flex-md-row-reverse">
+        <div class="col-md-4 text-center">
+          <img src="assets/pictures/dc_stitch.jpg" alt="Rectangular swatch of  double crochet in progress with pink yarn" class="img-fluid" width="300">
+        </div>
+        <div class="col-md-8">
+          <h2>Double Crochet</h2>
+          <p>Double crochet, or <b>dc</b> in some patterns, is one of the tallest basic stitches, creating an open, airy texture that works well for blankets, garments, and lacy designs.</p>
+          <a href="https://www.youtube.com/watch?v=a1whu6Gub1M" target="_blank">Here's a helpful YouTube tutorial.</a>
+        </div>
+      </section>
+
+      <section class="row align-items-center my-5">
+        <div class="col-md-4 text-center">
+          <img src="assets/pictures/tc_stitch.jpg" alt="Rectangular swatch of treble crochet in progress with blue yarn" class="img-fluid" width="300">
+        </div>
+        <div class="col-md-8">
+          <h2>Treble Crochet</h2>
+          <p>Treble crochet, abbreiviated as <b>tr</b> in most patterns, is a tall stitch created by wrapping the yard around your hook twice before inserting it into the stitch. It produces a very open, airy texture and adds significant height to a row. While the four above stithes are the most common, some more advanced patterns may ask for treble crochet stitches. 
+          Stitches even taller than treble, like double treble (<b>dtr</b>) or triple treble (<b>trtr</b>), follow the same basic process just with more yarn overs, allowing increasing heights.</p>
+          <a href="https://www.youtube.com/watch?v=3KtzjAAZHVY" target="_blank">Here's a helpful YouTube tutorial.</a>
+        </div>
+      </section>
+    </div> <!-- "content" id -->
+  </body>
+</html>
